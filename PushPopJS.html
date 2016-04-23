@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+var ingreso = [];
+    do{        
+        var valor = prompt("Ingrese saldo a depositar(0 para finalizar): ","");
+        valor = parseInt(valor);
+        if(!valor && valor != 0){
+            alert("Valor invalido");
+        }else{
+            ingreso.push(valor);
+        }
+    }while(valor!=0);
+    
+    ingreso.pop();
+    
+    console.log(ingreso);  
+    
+//Version 2.
+/*
+    var ingreso = [];
+    var pos = 0;
+    var again = false;
+    do{ 
+        if(again == true){
+            var valor = prompt("Ingrese nuevamente un valor para la posicion " + pos + " (0 para finalizar): ","");
+            again = false;
+        }else{
+            var valor = prompt("Ingrese un valor para la posicion " + pos + " (0 para finalizar): ","");
+        }
+        valor = parseInt(valor);
+        if(!valor && valor != 0){
+            alert("Valor invalido");
+            again = true;
+        }else{
+            again = false;
+            pos = pos + 1;
+            ingreso.push(valor);
+        }
+    }while(valor!=0);
+    
+    ingreso.pop();
+    
+    console.log(ingreso); 
+*/
+    
+</script>    
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<html>
+<head>
+ <title>Your Navigator 1.0</title>
+ <script type="text/javascript">
+  function extract(){
+      var nav = window.navigator;      
+      document.write("Name: <font color='green'>" + nav.appName + "</font><br>");
+      document.write("Version: <font color='green'>" + nav.appVersion + "</font><br>");
+      document.write("Platform: <font color='green'>" + nav.platform + "</font><br>");
+      document.write("Cookies enabled: <font color='green'>" + nav.cookieEnabled + "</font><br>");
+      document.write("Plugins installed: <font color='green'>" + "<br>");
+      for(var x=0 ; x <= nav.plugins.length ; x++){
+        document.write("<font color='green'>" + nav.plugins[x].name + "</font><br>");
+      }
+  }
+  </script>
+</head>
+    <body onload="extract();">
+        <h4>Information of your navigator</h4> 
+        <br>       
+    </body>
+</html>

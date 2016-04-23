@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Registro de una empresa(Test)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style-form.css" media="screen" title="Estilos" charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script src="jquery/jquery-1.11.3.js"></script>
+	<script src="validate-form.js"></script>
+</head>
+	<body>
+		<div id="divTitle">
+			Empresa de prueba
+		</div>
+		<br>
+		<form class="formulario1" id="formulario1" action="acceso.php" method="POST">
+			<div class="datos" id="datos">
+				Razon social
+				<div id="divName" class="verify">
+					<input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre de su empresa" maxlength="45">
+				</div>
+				RUT
+				<div id="divRut" class="verify">
+					<input type="text" name="rut" id="rut" placeholder="Numero de 12 digitos" maxlength="12">
+				</div> <div id="rutError" class="triangle-isosceles"> <div id="contentError"> <span id="textError"> Este rut ya se encuentra registrado </span> </div> </div>
+				Direccion
+				<div id="divDireccion" class="verify">
+					<input type="text" name="direccion" id="direccion" placeholder="Ingresar direccion de la empresa" maxlength="45">
+				</div>
+				Ciudad
+				<div id="divCiudad" class="verify">
+					<input type="text" name="ciudad" id="ciudad" placeholder="Ingrese una ciudad" maxlength="45" min="4">
+				</div>
+				Codigo postal
+				<div id="divCP" class="verify">
+					<input type="text" name="codigoPostal" id="codigoPostal" placeholder="5 digitos para Uruguay" maxlength="5">
+				</div>
+					Dueño
+				<hr>
+				Nombre
+				<div id="divNombreD" class="verify">
+					<input type="text" name="nombreDuenno" id="nombreDueno" placeholder="Dueño de la empresa" maxlength="45">
+				</div>
+				CI
+				<div id="divCI" class="verify">
+					<input type="text" name="ci" id="ci" placeholder="Numero sin puntos ni guiones de 8 digitos" maxlength="8">
+				</div>
+					<div id="date">
+					Fecha de nacimiento
+						<div id="divDia" class="verify">
+							<select name="dia" id="dia">
+								<option disabled selected> Día </option>
+							</select>
+						</div>
+						<div id="divMes" class="verify">
+							<select name="mes" id="mes" >
+								<option disabled selected> Mes </option>
+								<option value="1" > Enero </option>
+								<option value="2" > Febrero </option>
+								<option value="3" > Marzo </option>
+								<option value="4" > Abril </option>
+								<option value="5" > Mayo </option>
+								<option value="6" > Junio </option>
+								<option value="7" > Julio </option>
+								<option value="8" > Agosto </option>
+								<option value="9" > Septiembre </option>
+								<option value="10" > Octubre </option>
+								<option value="11" > Noviembre </option>
+								<option value="12" > Diciembre </option>
+							</select>
+						</div>
+						<div id="divAnno" class="verify">
+							<select name="anno" id="anno" >
+								<option disabled selected> Año </option>
+							</select>
+						</div>
+					</div>
+				  <br>
+				  <br>
+				<div id="divSubmit">
+					<input type="submit" name="submit" id="submit" value="Registrar">
+				</div>
+			</div>
+		</form>
+		<div id="container">
+		   <div id="header"></div>
+		   <div id="body"></div>
+		   <div id="footer"></div>
+		</div>
+	<script src="jquery/dataJquery.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+	//Creamos una funcion para sumar
+	function sumar(v1, v2){
+		var valor = v1 + v2;
+		return valor;
+	}
+	//Para restar.
+	function restar(v1, v2){
+		var valor = v1 - v2;
+		return valor
+	}
+	//Y otra para dividir.
+	function dividir(v1, v2){
+	var valor = v1 / v2;
+		return valor;
+	}
+	//Otra funcion para calcular 2 valores y 
+	//llamamos a la funcion que necesitemos.
+	//Ya sea la de sumar, restar o dividir.
+	//Esta funcion recibe como parametro 2 valores y otro con el 
+	//nombre de la funcion que le queramos aplicar.
+	function resultado (v1, v2,func){
+		var valor = func(v1, v2);
+		return valor;
+	}
+	//Para mostrar el resultado usamos la funcion resultado
+	//y le pasamos los valores y el nombre de la funcion.
+	alert(resultado(2,2,restar));
+		
+</script>
+
+</body>
+</html>

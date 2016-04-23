@@ -1,0 +1,148 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font: small-caps 100%/200% serif;
+	background-color: lightblue;
+}
+#divTitle{
+	width: 100%;
+	height: auto;
+	background-color: #6CF;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-family: oblique;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#rutError{
+	position: relative;
+	margin-left: 10%;
+	width: 220px;
+	background-color: red;
+	margin-top: 3px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	height: 16px;
+	-webkit-border-radius: 5px;
+}
+#contentError{
+	width: 220px;
+	height: 15px;
+}
+#textError{
+	position: relative;
+	top: -8px;
+	color: white;
+	font-style: oblique;
+	font-size: 10px;
+}
+#rutError::before{
+	content: "";
+	position: absolute;
+	left: 5%;
+	bottom: 10px;
+	border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid red;
+}
+/*#rutError:before{
+  content: "";
+  //border-width: 50px 50px;
+	background-color: blue;
+  border-style: solid;
+  //border-color: #f3961c transparent;
+	//margin: 0 auto;
+}*/
+.datos{
+	background-color: lightblue;
+	width: 60%;
+	text-align: center;
+}
+.datos input{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: orange;
+	border-width: 0px;
+	color: white;
+}
+hr{
+	width: 50%;
+	border-style: dotted;
+	border-color: gray;
+	margin-top: -5px;
+}
+#date{
+	margin: 0 auto;
+	width: 200px;
+	height: 25px;
+}
+#divDia {
+	width: 33%;
+	float:left;
+}
+#divMes {
+	width: 33%;
+	float:left;
+}
+#divAnno {
+	width: 33%;
+	float:left;
+}
+#date select{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	background-color: orange;
+	border-width: 0px;
+	color: white;
+}
+img{
+    vertical-align: middle;
+   display: none;
+}
+#divSubmit{
+	background-color: lightblue;
+	width: 40%;
+	margin: 0 auto;
+}
+#submit{
+	background-color: #6CF;
+	width: 100%;
+}
+.verify{
+	margin: 0 auto;
+	height: 35px;
+	width: 85%;
+	border-radius: 20px;
+}
+/* FOOTER */
+#container {
+   min-height:20%;
+   position:relative;
+}
+#header {
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+.rutClass{
+	background-position: right;
+	background-image: url(error2.png);
+	background-repeat: no-repeat;
+}
+
+/* */
